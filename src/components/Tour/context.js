@@ -1,10 +1,11 @@
 import { useContext, createContext, useReducer, useEffect } from 'react'
+import axios from 'axios'
 import reducer from './reducer'
 import toursData from '../../data'
 import paginate from './util'
 
 const AppContext = createContext()
-
+const url = 'https://course-api.com/react-tours-project'
 const initialState = {
   data: [],
   isLoading: true,
@@ -12,10 +13,15 @@ const initialState = {
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  const paginated = paginate(toursData)
+
   useEffect(() => {
     dispatch({ type: 'LOADING' })
-    dispatch({ type: 'DISPLAY_ITEM', payload: paginated })
+    const getData = async () => {
+      const { data } = await axios(url)
+      console.log(data)
+      dispatch({ type: 'DISPLAY_ITEM', payload: paginate(data) })
+    }
+    getData()
   }, [])
 
   const remove = (id) => {

@@ -1,3 +1,67 @@
+# Tours App
+
+The project involves providing information about tours available from an API. The user can view more information about the tour and also remove it from the list.
+The data is accessed from external API. The app utillizes light and dark themes pagination for pages.
+
+[Resource link]('https://course-api.com/react-tours-project')
+
+The project was guided by John Smilga:
+[React Couse by John Smilga](https://www.udemy.com/course/react-tutorial-and-projects-course/?couponCode=REACT-OCT)
+
+## Framework and technologies
+
+- React
+- Taiwindcss
+
+## Features
+
+- [] Access tours from external API.
+- [] Dark and light theme
+- [] Context API
+- [] Reducers
+- [] Pagination
+- [] Local Storage
+
+## Scope
+
+- [] The app gets data from the external API
+- [] User can remove tours from the app
+- [] The app only allows user to view the tour and no further actions.
+
+## React Installation
+
+To install react:
+
+```js
+npx create-react-app
+```
+
+## To install Taiwindcss
+
+Tailwind is a utility first css framework unlike other frameworks unlike bootstrap and Material UI which have pre-built. With tailwind you can create your own custom components.
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -P
+```
+
+Add all paths to taiwind.config.js
+
+```js
+content: [
+"./src/**/*.{js,jsx,ts,tsx}",
+],
+theme:
+```
+
+Add tailwind directive to global css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

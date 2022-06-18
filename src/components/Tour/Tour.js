@@ -2,16 +2,18 @@ import React from 'react'
 import { useState } from 'react'
 import { useGlobalContext } from './context'
 
-const Tour = ({ id, img, name, description, removeTour }) => {
+const Tour = ({ id, image, name, info, removeTour }) => {
   const { remove } = useGlobalContext()
   const [readMore, setReadMore] = useState(false)
 
   return (
     <div className='px-5 md:px-20'>
-      <h2 className=' text-2xl text-bold text-center mt-5'>{name}</h2>
+      <h2 className=' text-3xl text-bold text-blue-500 text-center my-5 text-bold'>
+        {name}
+      </h2>
       <div className='overflow-hidden'>
         <img
-          src={img}
+          src={image}
           alt={name}
           className='object-top mx-auto mt-1 mb-2 object-cover'
           width='70%'
@@ -19,9 +21,9 @@ const Tour = ({ id, img, name, description, removeTour }) => {
         />
       </div>
       <p>
-        {readMore ? description : `${description.substring(0, 150)}...`}
+        {readMore ? info : `${info.substring(0, 150)}...`}
         <button
-          className='ml-2 px-2 rounded-md shadow-lg bg-blue-500'
+          className='ml-2 px-2 rounded-md shadow-lg bg-blue-400'
           onClick={() => setReadMore(!readMore)}
         >
           {readMore ? 'show less' : 'read more'}
