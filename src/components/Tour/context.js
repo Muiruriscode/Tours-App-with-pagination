@@ -1,7 +1,6 @@
 import { useContext, createContext, useReducer, useEffect } from 'react'
 import axios from 'axios'
 import reducer from './reducer'
-import toursData from '../../data'
 import paginate from './util'
 
 const AppContext = createContext()
