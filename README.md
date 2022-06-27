@@ -15,18 +15,18 @@ The project was guided by John Smilga:
 
 ## Features
 
-- [] Access tours from external API.
-- [] Dark and light theme
-- [] Context API
-- [] Reducers
-- [] Pagination
-- [] Local Storage
+1. Access tours from external API.
+1. Dark and light theme
+1. Context API
+1. Reducers
+1. Pagination
+1. Local Storage
 
 ## Scope
 
-- [] The app gets data from the external API
-- [] User can remove tours from the app
-- [] The app only allows user to view the tour and no further actions.
+- The app gets data from the external API
+- User can remove tours from the app
+- The app only allows user to view the tour and no further actions.
 
 ## React Installation
 
