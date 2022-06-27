@@ -6,7 +6,7 @@ The data is accessed from external API. The app utillizes light and dark themes 
 [Resource link]('https://course-api.com/react-tours-project')
 
 The project was guided by John Smilga:
-[React Couse by John Smilga](https://www.udemy.com/course/react-tutorial-and-projects-course/?couponCode=REACT-OCT)
+[React Coruse by John Smilga](https://www.udemy.com/course/react-tutorial-and-projects-course/?couponCode=REACT-OCT)
 
 ## Framework and technologies
 
@@ -27,6 +27,8 @@ The project was guided by John Smilga:
 - The app gets data from the external API
 - User can remove tours from the app
 - The app only allows user to view the tour and no further actions.
+
+![Tours project](https://github.com/Muiruriscode/Tours-App-with-pagination/blob/main/tour.png)
 
 ## React Installation
 
